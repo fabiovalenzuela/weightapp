@@ -2,7 +2,9 @@
   "devToolsPort": 19002,
   "expoServerPort": 19000,
   "packagerPort": 19000,
-  "expoServerNgrokUrl": "https://nz-4cr.amathews98.weightapp.exp.direct",
-  "packagerNgrokUrl": "https://packager.nz-4cr.amathews98.weightapp.exp.direct",
-  "ngrokPid": 3648
+  "expoServerNgrokUrl": null,
+  "packagerNgrokUrl": null,
+  "ngrokPid": null,
+  "packagerPid": null,
+  "webpackServerPort": null
 }
