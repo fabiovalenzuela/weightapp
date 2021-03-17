@@ -94,7 +94,6 @@ export default function App() {
         }
 
     return (
-        <View>
         <Login 
         email = {email}
         setEmail = {setEmail}
@@ -108,6 +107,5 @@ export default function App() {
         passwordError = {passwordError}
         hasAccountHandler = {hasAccountHandler}
         />
-        </View>
     );
 }
