@@ -4,10 +4,6 @@ import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
 
-function appAuth() {
-    
-}
-
 export default function App() {
         const [user, setUser] = useState('');
         const [email, setEmail] = useState('');
@@ -94,18 +90,29 @@ export default function App() {
         }
 
     return (
-        <Login 
-        email = {email}
-        setEmail = {setEmail}
-        password = {password}
-        setPassword = {setPassword}
-        handleLogin = {handleLogin}
-        handleSignup = {handleSignup}
-        hasAccount = {hasAccount}
-        setHasAccount = {setHasAccount}
-        emailError = {emailError}
-        passwordError = {passwordError}
-        hasAccountHandler = {hasAccountHandler}
-        />
+        <>
+        {user ? (
+            <>
+                <Login 
+                email = {email}
+                setEmail = {setEmail}
+                password = {password}
+                setPassword = {setPassword}
+                handleLogin = {handleLogin}
+                handleSignup = {handleSignup}
+                hasAccount = {hasAccount}
+                setHasAccount = {setHasAccount}
+                emailError = {emailError}
+                passwordError = {passwordError}
+                hasAccountHandler = {hasAccountHandler}
+                />
+            </>
+        ):(
+            <>
+                <Profile handleLogout={handleLogout}/>
+            </>
+
+        )}
+        </>
     );
 }
