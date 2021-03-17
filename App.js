@@ -4,10 +4,6 @@ import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
 
-function appAuth() {
-    
-}
-
 export default function App() {
         const [user, setUser] = useState('');
         const [email, setEmail] = useState('');
