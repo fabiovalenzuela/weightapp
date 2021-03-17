@@ -1,6 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-const Profile = (handleLogout) => {
+const Profile = ({handleLogout}) => {
 
     return(
         <View style = {styles.container}>

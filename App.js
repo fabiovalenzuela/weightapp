@@ -93,6 +93,10 @@ export default function App() {
         <>
         {user ? (
             <>
+                <Profile handleLogout={handleLogout}/>
+            </>
+        ):(
+            <>
                 <Login 
                 email = {email}
                 setEmail = {setEmail}
@@ -106,10 +110,6 @@ export default function App() {
                 passwordError = {passwordError}
                 hasAccountHandler = {hasAccountHandler}
                 />
-            </>
-        ):(
-            <>
-                <Profile handleLogout={handleLogout}/>
             </>
 
         )}
