@@ -39,6 +39,7 @@ const Login = (props) => {
             <View>
                 {hasAccount ? (
                 <>
+
                     <View>
                         <TouchableOpacity style={styles.loginBtn} onPress={handleLogin}>
                             <Text style={styles.loginText}>LOGIN</Text>
@@ -66,7 +67,7 @@ const Login = (props) => {
                         <View><Text>Already have an account?</Text></View>
                     <View style={styles.switchToLoginOrRegister}>
                         <TouchableOpacity>
-                            <Text style={styles.loginText} onPress={hasAccountHandler}>Sign In</Text>
+                            <Text style={styles.loginText} onPress={hasAccountHandler}>Go Back</Text>
                         </TouchableOpacity>
                     </View>
                 </>
