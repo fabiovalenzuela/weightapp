@@ -3,14 +3,11 @@ import {StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native
 
 const Login = (props) => {
     const {
-        email,
         setEmail,
-        password,
         setPassword,
         handleLogin,
         handleSignup,
         hasAccount,
-        setHasAccount,
         emailError,
         passwordError,
         hasAccountHandler,
@@ -18,7 +15,9 @@ const Login = (props) => {
 
     return(
         <View style={styles.container}>
-            <Text style={styles.logo}>WeightExchange</Text>
+            {hasAccount ? (
+                <Text style={styles.logo}>WeightExchange</Text>
+            ):(<Text style={styles.logo}>Sign Up</Text>)}
             <View style={styles.inputView} >
                 <TextInput
                     style={styles.inputText}

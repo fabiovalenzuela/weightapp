@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import {Text, View, TextInput, TouchableOpacity } from 'react-native';
 import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
@@ -59,10 +58,6 @@ export default function App() {
                 });
         };
 
-        const handleLogout = () => {
-            fire.auth().signOut();
-        };
-
         const authListener = () => {
             fire.auth().onAuthStateChanged( user => {
                 if(user) {
@@ -93,7 +88,7 @@ export default function App() {
         <>
         {user ? (
             <>
-                <Profile handleLogout={handleLogout}/>
+                <Profile/>
             </>
         ):(
             <>
