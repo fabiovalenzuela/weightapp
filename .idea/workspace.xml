@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="">
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="fixed navigation and log out">
       <change afterPath="$PROJECT_DIR$/components/HomeScreen.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/components/SettingsScreen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
@@ -6421,8 +6421,16 @@
       <workItem from="1616013460541" duration="7672000" />
       <workItem from="1616031647126" duration="1667000" />
       <workItem from="1616098442999" duration="2685000" />
-      <workItem from="1616103867595" duration="7489000" />
+      <workItem from="1616103867595" duration="7833000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed navigation and log out">
+      <created>1616114164304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616114164304</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -6439,5 +6447,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed navigation and log out" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed navigation and log out" />
   </component>
 </project>
