@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
 import {Text, View, TextInput, TouchableOpacity } from 'react-native';
+import fire from './fire';
 
 export default function ForgotPassword() {
 
     const [email, setEmail] = useState('');
-
+    const [emailError, setEmailError] = useState('');
+    function passwordReset() {
+           return fire.auth().sendPasswordResetEmail(email)
+        }
     return (
         <View style={{flex: 1,
             backgroundColor:"#ccffcf",
@@ -26,6 +30,8 @@ export default function ForgotPassword() {
                             placeholderTextColor="#003f5c"
                             onChangeText={setEmail}/>
                 </View>
-            </View>
+                <View><Text>{emailError}</Text></View>
+                <View><TouchableOpacity onPress = {passwordReset}><Text>Submit</Text></TouchableOpacity></View>
+        </View>
     );
 }
