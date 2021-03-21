@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
+import ForgotPassword from './components/ForgotPassword';
 
 export default function App() {
         const [user, setUser] = useState('');
@@ -10,6 +11,7 @@ export default function App() {
         const [emailError, setEmailError] = useState();
         const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
+        const [forgotPassword, setForgotPassword] = useState(false);
 
         const clearInputs = () => {
             setEmail('');
@@ -86,28 +88,33 @@ export default function App() {
 
     return (
         <>
-        {user ? (
+        {forgotPassword ?(<><ForgotPassword/></>):(
             <>
-                <Profile/>
-            </>
-        ):(
-            <>
-                <Login
-                email = {email}
-                setEmail = {setEmail}
-                password = {password}
-                setPassword = {setPassword}
-                handleLogin = {handleLogin}
-                handleSignup = {handleSignup}
-                hasAccount = {hasAccount}
-                setHasAccount = {setHasAccount}
-                emailError = {emailError}
-                passwordError = {passwordError}
-                hasAccountHandler = {hasAccountHandler}
-                />
-            </>
+            {user ? (
+                <>
+                    <Profile/>
+                </>
+            ):(
+                <>
+                    <Login
+                    email = {email}
+                    setEmail = {setEmail}
+                    password = {password}
+                    setPassword = {setPassword}
+                    handleLogin = {handleLogin}
+                    handleSignup = {handleSignup}
+                    hasAccount = {hasAccount}
+                    setHasAccount = {setHasAccount}
+                    emailError = {emailError}
+                    passwordError = {passwordError}
+                    hasAccountHandler = {hasAccountHandler}
+                    setForgotPassword = {setForgotPassword}
+                    />
+                </>
 
-        )}
+            )}
+            </>
+            )}
         </>
     );
 }

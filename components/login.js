@@ -11,7 +11,12 @@ const Login = (props) => {
         emailError,
         passwordError,
         hasAccountHandler,
+        setForgotPassword,
     } = props;
+
+    function forgotPasswordHandler() {
+        setForgotPassword(true);
+    }
 
     return(
         <View style={styles.container}>
@@ -52,7 +57,7 @@ const Login = (props) => {
                     </View>
                     <View style = {styles.forgotBody}>
                         <TouchableOpacity>
-                            <Text style={styles.forgot}>Forgot Password?</Text>
+                            <Text style={styles.forgot} onPress = {forgotPasswordHandler}>Forgot Password?</Text>
                         </TouchableOpacity>
                     </View>
                 </>
