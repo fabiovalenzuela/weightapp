@@ -1,7 +1,6 @@
 import React  from "react";
 import {Text, View} from "react-native";
-import barcodeScanner from "./barcodeScanner";
-import(barcodeScanner())
+
 
 export default function HomeScreen() {
 
