@@ -1,6 +1,7 @@
 import React, { useState, useEffect }  from "react";
 import {Text, View, StyleSheet, Button } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
+import sendApiRequest from "./Edamam";
 
 
 export default function BarcodeScanner() {
@@ -14,9 +15,9 @@ export default function BarcodeScanner() {
         })();
     }, []);
 
-    const handleBarCodeScanned = ({type, data}) => {
+    const handleBarCodeScanned = ({data}) => {
         setScanned(true);
-        alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+        sendApiRequest(data);
     };
 
     if (hasPermission === null) {
