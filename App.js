@@ -3,7 +3,7 @@ import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
 import ForgotPassword from './components/ForgotPassword';
-import barcodeScanner from "./components/barcodeScanner";
+import barcodeScanner from "./components/BarcodeScanner";
 
 export default function App() {
         const [user, setUser] = useState('');

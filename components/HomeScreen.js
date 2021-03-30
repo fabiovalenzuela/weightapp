@@ -1,13 +1,23 @@
-import React  from "react";
-import {Text, View} from "react-native";
-
+import React, {useState} from "react";
+import {Text, View, TouchableOpacity} from "react-native";
+import BarcodeScanner from "./BarcodeScanner";
 
 export default function HomeScreen() {
 
+    const [isItScanning, changeScanning] = useState(false);
+    function isScanningHandler() {
+        changeScanning(!isItScanning);
+    }
     return (
-        <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-            <Text>Home!</Text>
-        </View>
-    );
+     <>
+    {isItScanning ?(<BarcodeScanner/>):(
+                <>
+                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                        <TouchableOpacity onPress = {isScanningHandler}><Text>Scan</Text></TouchableOpacity>
+                    </View>
+                </>
+        )}
+    </>
+    )
 }
 
