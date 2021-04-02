@@ -1,8 +1,7 @@
 import React, { useState, useEffect }  from "react";
 import {Text, View, StyleSheet, Button } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
-import sendApiRequest from "./Edamam";
-
+import sendApiRequest from "./Edamam"
 
 export default function BarcodeScanner() {
     const [hasPermission, setHasPermission] = useState(null);
@@ -39,6 +38,7 @@ export default function BarcodeScanner() {
     );
 }
 
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -46,4 +46,3 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 });
-
