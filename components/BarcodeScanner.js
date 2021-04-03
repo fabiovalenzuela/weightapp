@@ -1,12 +1,12 @@
 import React, { useState, useEffect }  from "react";
 import {Text, View, StyleSheet, Button } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
-import sendApiRequest from "./Edamam";
+import {sendApiRequest} from "./Edamam";
 
-
-export default function BarcodeScanner() {
+export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
+    const [pageSwitch, setPageSwitch] = useState(false);
 
     useEffect(() => {
         (async () => {
@@ -18,6 +18,8 @@ export default function BarcodeScanner() {
     const handleBarCodeScanned = ({data}) => {
         setScanned(true);
         sendApiRequest(data);
+        setPageSwitch(true);
+        setScanned(false);
     };
 
     if (hasPermission === null) {
@@ -29,14 +31,28 @@ export default function BarcodeScanner() {
 
 
     return (
+        <>
+        {pageSwitch ? (
+        <CalorieCount/>
+        
+        ):(
         <View style={styles.container}>
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFillObject}
             />
-            {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)}/>}
         </View>
+        )}
+        </>
     );
+}
+
+function CalorieCount() {
+    return(
+            <View style={styles.container}>
+                <Text>Calories:</Text>
+            </View>
+    )
 }
 
 const styles = StyleSheet.create({

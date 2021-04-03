@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {Text, View, TouchableOpacity} from "react-native";
-import BarcodeScanner from "./BarcodeScanner";
+import {BarcodeScanner} from "./BarcodeScanner";
 
 export default function HomeScreen() {
 
@@ -9,13 +9,13 @@ export default function HomeScreen() {
         changeScanning(!isItScanning);
     }
     return (
-     <>
-    {isItScanning ?(<BarcodeScanner/>):(
-                <>
-                    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-                        <TouchableOpacity onPress = {isScanningHandler}><Text>Scan</Text></TouchableOpacity>
-                    </View>
-                </>
+    <>
+        {isItScanning ?(<BarcodeScanner/>):(
+                    <>
+                        <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+                            <TouchableOpacity onPress = {isScanningHandler}><Text>Scan Calories With UPC</Text></TouchableOpacity>
+                        </View>
+                    </>
         )}
     </>
     )
