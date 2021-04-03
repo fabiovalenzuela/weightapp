@@ -54,12 +54,3 @@ function CalorieCount() {
             </View>
     )
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        flexDirection: 'column',
-        justifyContent: 'center',
-    },
-});
-
