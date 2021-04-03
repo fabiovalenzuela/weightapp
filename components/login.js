@@ -1,24 +1,29 @@
 import React from 'react';
-import {StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
+import {Text, View, TextInput, TouchableOpacity } from 'react-native';
+import styles from './globalstyles.js';
 
 const Login = (props) => {
     const {
-        email,
         setEmail,
-        password,
         setPassword,
         handleLogin,
         handleSignup,
         hasAccount,
-        setHasAccount,
         emailError,
         passwordError,
         hasAccountHandler,
+        setForgotPassword,
     } = props;
+
+    function forgotPasswordHandler() {
+        setForgotPassword(true);
+    }
 
     return(
         <View style={styles.container}>
-            <Text style={styles.logo}>WeightExchange</Text>
+            {hasAccount ? (
+                <Text style={styles.logo}>WeightExchange</Text>
+            ):(<Text style={styles.logo}>Sign Up</Text>)}
             <View style={styles.inputView} >
                 <TextInput
                     style={styles.inputText}
@@ -39,6 +44,7 @@ const Login = (props) => {
             <View>
                 {hasAccount ? (
                 <>
+
                     <View>
                         <TouchableOpacity style={styles.loginBtn} onPress={handleLogin}>
                             <Text style={styles.loginText}>LOGIN</Text>
@@ -52,7 +58,7 @@ const Login = (props) => {
                     </View>
                     <View style = {styles.forgotBody}>
                         <TouchableOpacity>
-                            <Text style={styles.forgot}>Forgot Password?</Text>
+                            <Text style={styles.forgot} onPress = {forgotPasswordHandler}>Forgot Password?</Text>
                         </TouchableOpacity>
                     </View>
                 </>
@@ -66,7 +72,7 @@ const Login = (props) => {
                         <View><Text>Already have an account?</Text></View>
                     <View style={styles.switchToLoginOrRegister}>
                         <TouchableOpacity>
-                            <Text style={styles.loginText} onPress={hasAccountHandler}>Sign In</Text>
+                            <Text style={styles.loginText} onPress={hasAccountHandler}>Go Back</Text>
                         </TouchableOpacity>
                     </View>
                 </>
@@ -76,62 +82,6 @@ const Login = (props) => {
     )
 }
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#05a6f0',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
-    logo:{
-        fontWeight:"bold",
-        fontSize:40,
-        color:"#ffffff",
-        marginBottom:40
-    },
-    inputView:{
-        width:"80%",
-        backgroundColor:"#ffffff",
-        borderRadius:25,
-        height:50,
-        marginBottom:5,
-        justifyContent:"center",
-        padding:20
-    },
-    inputText:{
-        height:50,
-        color:"black"
-    },
-    forgot:{
-        color:"white",
-        fontSize:11
-    },
-    loginBtn:{
-        width:"100%",
-        backgroundColor:"#af9cff",
-        borderRadius:25,
-        height:50,
-        alignItems:"center",
-        justifyContent:"center",
-        marginTop:20,
-        marginBottom:30
-    },
-    loginText:{
-        color:"white"
-    },
-    errMsg:{
-        color: 'red'
-    },
-    errMsgBody:{
-        paddingBottom:15,
-    },
-    switchToLoginOrRegister:{
-        alignItems: "center"
-    },
-    forgotBody:{
-        alignItems:"center",
-        marginTop:25
-    }
-});
+
 
 export default Login;

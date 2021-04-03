@@ -1,21 +1,25 @@
 import React from "react";
-import { StyleSheet, Text, View, TextInput, TouchableOpacity } from 'react-native';
-const Profile = () => {
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import HomeScreen from './HomeScreen';
+import SettingsScreen from './SettingsScreen';
+
+
+const Tab = createBottomTabNavigator();
+
+const Profile =()=>{
+
     return(
-        <View style = {styles.container}>
-            <Text>Hello User!</Text>
-            <TouchableOpacity onPress = {handleLogout}>Logout</TouchableOpacity>
-        </View>
+        <NavigationContainer>
+            <Tab.Navigator>
+                <Tab.Screen name="Home" component={HomeScreen} />
+                <Tab.Screen name="Settings" component={SettingsScreen} />
+            </Tab.Navigator>
+        </NavigationContainer>
+
     )
 }
 
-const styles = StyleSheet.create({
-    container:{
-        flex: 1,
-        backgroundColor:"#ccffcf",
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-})
 
 export default Profile;

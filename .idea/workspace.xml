@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="" />
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="removes import from homescreen, allows code to function as is">
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/barcodeScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BarcodeScanner.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="origin/main" />
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/main" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1pohOyAdXMtmPIYUc2KRNp5aZer" />
@@ -20,8 +45,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="js.last.introduce.type" value="CONST" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -43,7 +70,46 @@
       <workItem from="1615855323223" duration="2475000" />
       <workItem from="1615941949308" duration="1085000" />
       <workItem from="1615943390583" duration="634000" />
+      <workItem from="1616013460541" duration="7672000" />
+      <workItem from="1616031647126" duration="1667000" />
+      <workItem from="1616098442999" duration="2685000" />
+      <workItem from="1616103867595" duration="7833000" />
+      <workItem from="1616295141996" duration="339000" />
+      <workItem from="1616339184982" duration="1799000" />
+      <workItem from="1616375900485" duration="2478000" />
+      <workItem from="1616765091731" duration="301000" />
+      <workItem from="1616858043806" duration="4962000" />
+      <workItem from="1617044824386" duration="4251000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed navigation and log out">
+      <created>1616114164304</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616114164304</updated>
+    </task>
+    <task id="LOCAL-00002" summary="creates globalStyles sheet to for the entire application">
+      <created>1616368529094</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616368529094</updated>
+    </task>
+    <task id="LOCAL-00003" summary="adds barcode scanner,&#10;adds camera permissions for ios and android,&#10;****DO NOT MERGE, needs to be integrated properly into the home screen class">
+      <created>1616862809549</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616862809549</updated>
+    </task>
+    <task id="LOCAL-00004" summary="removes import from homescreen, allows code to function as is">
+      <created>1616862931004</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616862931004</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -60,5 +126,12 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed navigation and log out" />
+    <MESSAGE value="creates globalStyles sheet to for the entire application" />
+    <MESSAGE value="adds barcode scanner,&#10;adds camera permissions for ios and android,&#10;****DO NOT MERGE, needs to be integrated properly into the home screen class" />
+    <MESSAGE value="removes import from homescreen, allows code to function as is" />
+    <option name="LAST_COMMIT_MESSAGE" value="removes import from homescreen, allows code to function as is" />
   </component>
 </project>

@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import {Text, View, TextInput, TouchableOpacity } from 'react-native';
 import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
-
-function appAuth() {
-    
-}
+import ForgotPassword from './components/ForgotPassword';
+import barcodeScanner from "./components/BarcodeScanner";
 
 export default function App() {
         const [user, setUser] = useState('');
         const [email, setEmail] = useState('');
         const [password, setPassword] = useState('');
-        const [emailError, setEmailError] = useState('Some Email Error');
-        const [passwordError, setPasswordError] = useState('Some Password Error');
+        const [emailError, setEmailError] = useState();
+        const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
+        const [forgotPassword, setForgotPassword] = useState(false);
 
         const clearInputs = () => {
             setEmail('');
@@ -63,10 +61,6 @@ export default function App() {
                 });
         };
 
-        const handleLogout = () => {
-            fire.auth().signOut();
-        };
-
         const authListener = () => {
             fire.auth().onAuthStateChanged( user => {
                 if(user) {
@@ -94,18 +88,34 @@ export default function App() {
         }
 
     return (
-        <Login 
-        email = {email}
-        setEmail = {setEmail}
-        password = {password}
-        setPassword = {setPassword}
-        handleLogin = {handleLogin}
-        handleSignup = {handleSignup}
-        hasAccount = {hasAccount}
-        setHasAccount = {setHasAccount}
-        emailError = {emailError}
-        passwordError = {passwordError}
-        hasAccountHandler = {hasAccountHandler}
-        />
+        <>
+        {forgotPassword ?(<><ForgotPassword/></>):(
+            <>
+            {user ? (
+                <>
+                    <Profile/>
+                </>
+            ):(
+                <>
+                    <Login
+                    email = {email}
+                    setEmail = {setEmail}
+                    password = {password}
+                    setPassword = {setPassword}
+                    handleLogin = {handleLogin}
+                    handleSignup = {handleSignup}
+                    hasAccount = {hasAccount}
+                    setHasAccount = {setHasAccount}
+                    emailError = {emailError}
+                    passwordError = {passwordError}
+                    hasAccountHandler = {hasAccountHandler}
+                    setForgotPassword = {setForgotPassword}
+                    />
+                </>
+
+            )}
+            </>
+            )}
+        </>
     );
 }
