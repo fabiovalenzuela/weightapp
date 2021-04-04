@@ -5,6 +5,6 @@ export async function sendApiRequest(UPC) {
         return response.json();
     }).then((data) => {
         const calories = data.hints[0].food.nutrients.ENERC_KCAL;
-        alert('Calories: ' + calories);
+        alert('Calories: ' + Math.ceil(calories));
     })
 }
