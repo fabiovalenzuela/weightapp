@@ -4,6 +4,7 @@ export async function sendApiRequest(UPC) {
     await fetch('https://api.edamam.com/api/food-database/v2/parser?upc=' + UPC + '&app_id=' + APP_ID + '&app_key='+ API_KEY).then(response => {
         return response.json();
     }).then((data) => {
-        data.hints[0].food.nutrients.ENERC_KCAL;
+        const calories = data.hints[0].food.nutrients.ENERC_KCAL;
+        alert('Calories: ' + Math.ceil(calories));
     })
 }
