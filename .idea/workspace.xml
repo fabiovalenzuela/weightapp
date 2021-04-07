@@ -21,6 +21,7 @@
     <option name="NEW_BASE" value="origin/main" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="main" />
@@ -84,6 +85,9 @@
       <workItem from="1616858043806" duration="4962000" />
       <workItem from="1617044824386" duration="4251000" />
       <workItem from="1617584596867" duration="554000" />
+      <workItem from="1617515456183" duration="6956000" />
+      <workItem from="1617546129585" duration="941000" />
+      <workItem from="1617547092399" duration="248000" />
     </task>
     <task id="LOCAL-00001" summary="fixed navigation and log out">
       <created>1616114164304</created>
@@ -113,7 +117,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616862931004</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="made change in alert">
+      <created>1617546599657</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617546599658</updated>
+    </task>
+    <task id="LOCAL-00006" summary="made change in alert">
+      <created>1617546722815</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617546722815</updated>
+    </task>
+    <task id="LOCAL-00007" summary="made some change in alert">
+      <created>1617546833687</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1617546833687</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +161,8 @@
     <MESSAGE value="creates globalStyles sheet to for the entire application" />
     <MESSAGE value="adds barcode scanner,&#10;adds camera permissions for ios and android,&#10;****DO NOT MERGE, needs to be integrated properly into the home screen class" />
     <MESSAGE value="removes import from homescreen, allows code to function as is" />
-    <option name="LAST_COMMIT_MESSAGE" value="removes import from homescreen, allows code to function as is" />
+    <MESSAGE value="made change in alert" />
+    <MESSAGE value="made some change in alert" />
+    <option name="LAST_COMMIT_MESSAGE" value="made some change in alert" />
   </component>
 </project>
