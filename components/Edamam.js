@@ -1,3 +1,5 @@
+import fire from './fire';
+
 export async function sendApiRequest(UPC) {
     let APP_ID = "d6a2d254";
     let API_KEY = "893c02ccf6f4bb530970aa7d0b4a39fa";
@@ -5,6 +7,15 @@ export async function sendApiRequest(UPC) {
         return response.json();
     }).then((data) => {
         const calories = data.hints[0].food.nutrients.ENERC_KCAL;
-        alert('Calories: ' + calories);
+        storeToDatabase(calories);
     })
+}
+
+function storeToDatabase(calories) {
+    fire
+        .database()
+        .ref('users/' + fire.auth().currentUser.uid)
+        .set({
+            caloriesConsumed: Math.ceil(calories),
+        });
 }

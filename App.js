@@ -80,13 +80,6 @@ export default function App() {
             setHasAccount(!hasAccount);
         }
 
-        function loginTest() {
-            console.log("Username: " + email + " Password: " + password);
-        }
-        function signUpTest() {
-            console.log("Username: " + email + " Password: " + password + "/nUser created");
-        }
-
     return (
         <>
         {forgotPassword ?(<><ForgotPassword/></>):(

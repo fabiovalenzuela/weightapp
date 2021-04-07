@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="removes import from homescreen, allows code to function as is">
-      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/barcodeScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BarcodeScanner.js" afterDir="false" />
-    </list>
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="removes import from homescreen, allows code to function as is" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,6 +52,16 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Edamam.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/components/Edamam.js" working-dir="$PROJECT_DIR$/components">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.Edamam.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -80,6 +83,7 @@
       <workItem from="1616765091731" duration="301000" />
       <workItem from="1616858043806" duration="4962000" />
       <workItem from="1617044824386" duration="4251000" />
+      <workItem from="1617584596867" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="fixed navigation and log out">
       <created>1616114164304</created>

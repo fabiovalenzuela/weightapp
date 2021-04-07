@@ -3,6 +3,7 @@ import {Text, View, StyleSheet, Button } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
 import {sendApiRequest} from "./Edamam";
 import styles from './globalstyles.js';
+import fire from './fire';
 
 export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
@@ -48,10 +49,11 @@ export const BarcodeScanner = () => {
     );
 }
 
+
 function CalorieCount() {
     return(
             <View style={styles.container}>
-                <Text>Calories:</Text>
+                <Text>Calories: {} </Text>
             </View>
     )
 }
