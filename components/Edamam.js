@@ -12,7 +12,7 @@ export async function sendApiRequest(UPC) {
 }
 
 function storeToDatabase(calories) {
-    fire
+        fire
         .database()
         .ref('users/' + fire.auth().currentUser.uid)
         .set({
