@@ -9,7 +9,7 @@ export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
     const [pageSwitch, setPageSwitch] = useState(false);
-
+    const [calories, setCalories] = useState(0);
     useEffect(() => {
         (async () => {
             const {status} = await BarCodeScanner.requestPermissionsAsync();
@@ -17,10 +17,18 @@ export const BarcodeScanner = () => {
         })();
     }, []);
 
+    function CalorieCount() {
+        fire.database().ref('users/' + fire.auth().currentUser.uid + "/caloriesConsumed").on('value',(snapshot => {
+            const data = snapshot.val();
+            setCalories(data);
+        }))
+    }
+
     const handleBarCodeScanned = ({data}) => {
         setScanned(true);
         sendApiRequest(data);
         setPageSwitch(true);
+        CalorieCount();
         setScanned(false);
     };
 
@@ -31,11 +39,12 @@ export const BarcodeScanner = () => {
         return <Text>No access to camera</Text>;
     }
 
-
     return (
         <>
         {pageSwitch ? (
-        <CalorieCount/>
+        <View style={styles.container}>
+            <Text>Calories: {calories}</Text>
+        </View>
         
         ):(
         <View style={styles.container}>
@@ -50,10 +59,5 @@ export const BarcodeScanner = () => {
 }
 
 
-function CalorieCount() {
-    return(
-            <View style={styles.container}>
-                <Text>Calories: {} </Text>
-            </View>
-    )
-}
+
+
