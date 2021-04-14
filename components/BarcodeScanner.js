@@ -1,9 +1,12 @@
 import React, { useState, useEffect }  from "react";
-import {Text, View, StyleSheet, TouchableOpacity} from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity,Dimensions} from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
 import {sendApiRequest} from "./Edamam";
 import styles from './globalstyles.js';
 import fire from './fire';
+
+
+
 export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);

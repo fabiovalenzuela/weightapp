@@ -1,7 +1,10 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet,Dimensions} from "react-native";
+
+const { width } = Dimensions.get('screen');
 
 //universal stylesheet for application, may be imported to provide default style to certain objects
 export default StyleSheet.create({
+
     container: {
         flex: 1,
         backgroundColor: '#05a6f0',

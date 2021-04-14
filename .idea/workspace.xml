@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="adds button to rescan in application">
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time.">
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/BarcodeScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BarcodeScanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Edamam.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Edamam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ForgotPassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ForgotPassword.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Profile.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SettingsScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/SettingsScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/fire.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/fire.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/globalstyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globalstyles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/nav.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617546833687</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time.">
+      <created>1618443708095</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1618443708095</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,14 +195,15 @@
     <MESSAGE value="removes import from homescreen, allows code to function as is" />
     <MESSAGE value="made change in alert" />
     <MESSAGE value="made some change in alert" />
-    <option name="LAST_COMMIT_MESSAGE" value="made some change in alert" />
+    <MESSAGE value="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time." />
+    <option name="LAST_COMMIT_MESSAGE" value="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/components/BarcodeScanner.js</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
