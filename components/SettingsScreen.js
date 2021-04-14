@@ -1,6 +1,7 @@
 import {Text, View, TouchableOpacity} from "react-native";
 import React from "react";
 import fire from "./fire";
+import styles from './globalstyles.js';
 
 const handleLogout = () => {
     fire.auth().signOut();
@@ -8,10 +9,7 @@ const handleLogout = () => {
 
 export default function SettingsScreen() {
     return (
-        <View style={{flex: 1,
-            backgroundColor:"#ccffcf",
-            alignItems: 'center',
-            justifyContent: 'center'}}>
+        <View style={styles.settingScreen}>
             <Text>Settings!</Text>
             <View>
                 <TouchableOpacity onPress = {handleLogout}>

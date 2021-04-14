@@ -1,6 +1,6 @@
 import {StyleSheet} from "react-native";
 
-
+//universal stylesheet for application, may be imported to provide default style to certain objects
 export default StyleSheet.create({
     container: {
         flex: 1,
@@ -56,7 +56,38 @@ export default StyleSheet.create({
     forgotBody:{
         alignItems:"center",
         marginTop:25
+    },
+    scannerMask : {
+        borderWidth: 1,
+        borderColor : "#FFFFFF",
+        width: width/1.5,
+        height: width/1.5
+    },forgotScreen:{flex: 1,
+        backgroundColor:"#ccffcf",
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%'
+
+    },
+    forgotScreen2:{width:"70%",
+        backgroundColor:"#ffffff",
+        borderRadius:25,
+        height:50,
+        marginBottom:5,
+        justifyContent:"center",
+        padding:20}
+    ,forgotMail:{
+
     }
+    ,
+    settingScreen:{
+        flex: 1,
+        backgroundColor:"#ccffcf",
+        alignItems: 'center',
+        justifyContent: 'center'
+
+    }
+
 });
 
 

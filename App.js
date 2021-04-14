@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import fire from './components/fire';
 import Login from './components/login';
-import Profile from './components/Profile';
+import MainNavigation from './components/MainNavigation';
 import ForgotPassword from './components/ForgotPassword';
-import barcodeScanner from "./components/BarcodeScanner";
 
 export default function App() {
+    //react hooks for objects
         const [user, setUser] = useState('');
         const [email, setEmail] = useState('');
         const [password, setPassword] = useState('');
@@ -14,15 +14,18 @@ export default function App() {
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
 
+        //clears any values prior to startup
         const clearInputs = () => {
             setEmail('');
             setPassword('');
         }
-
+        //clears email and password errors prior to startup
         const clearErrors = () => {
             setEmailError('');
             setPasswordError('');
         }
+
+        // login error handler for login function
         const handleLogin = () => {
             clearErrors();
             fire
@@ -41,7 +44,7 @@ export default function App() {
                     }
                 });
         };
-
+    // signup error handler for signup function
         const handleSignup = () => {
             clearErrors();
             clearInputs();
@@ -61,6 +64,7 @@ export default function App() {
                 });
         };
 
+        //triggers for transitions/response within the login page
         const authListener = () => {
             fire.auth().onAuthStateChanged( user => {
                 if(user) {
@@ -86,7 +90,7 @@ export default function App() {
             <>
             {user ? (
                 <>
-                    <Profile/>
+                    <MainNavigation/>
                 </>
             ):(
                 <>

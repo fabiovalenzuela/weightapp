@@ -1,11 +1,9 @@
 import React, { useState, useEffect }  from "react";
-import {Text, View, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity} from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
 import {sendApiRequest} from "./Edamam";
 import styles from './globalstyles.js';
 import fire from './fire';
-
-const { width } = Dimensions.get('screen');
 export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
@@ -18,6 +16,8 @@ export const BarcodeScanner = () => {
         })();
     }, []);
 
+
+    //flip switch to transition back to barcode scanner
     function pageSwitchHandler() {
         setPageSwitch(!pageSwitch);
     }
@@ -27,7 +27,7 @@ export const BarcodeScanner = () => {
             setCalories(data);
         }))
     }
-
+//triggered after scanning barcode, flips switches and transitions to calorie view
     const handleBarCodeScanned = ({data}) => {
         setScanned(true);
         sendApiRequest(data);
@@ -35,16 +35,17 @@ export const BarcodeScanner = () => {
         CalorieCount();
         setScanned(false);
     };
-
+// prompt for permissions access from the user device
     if (hasPermission === null) {
         return <Text>Requesting for camera permission</Text>;
     }
     if (hasPermission === false) {
         return <Text>No access to camera</Text>;
     }
-
+// returns the page view for the barcode scanner
     return (
         <>
+
         {pageSwitch ? (
         <View style={styles.container}>
             <Text>Calories: {calories}</Text>
@@ -60,21 +61,12 @@ export const BarcodeScanner = () => {
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
                 style={StyleSheet.absoluteFill}
             />
-            <View style = {bsStyle.scannerMask}></View>
+            <View style = {styles.scannerMask}/>
         </View>
         )}
         </>
     );
 }
-
-const bsStyle = StyleSheet.create({
-    scannerMask : {
-        borderWidth: 1,
-        borderColor : "#FFFFFF",
-        width: width/1.5,
-        height: width/1.5
-    },
-})
 
 
 
