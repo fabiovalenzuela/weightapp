@@ -1,5 +1,5 @@
 import React, { useState, useEffect }  from "react";
-import {Text, View, StyleSheet, Button } from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
 import {sendApiRequest} from "./Edamam";
 import styles from './globalstyles.js';
@@ -17,6 +17,9 @@ export const BarcodeScanner = () => {
         })();
     }, []);
 
+    function pageSwitchHandler() {
+        setPageSwitch(!pageSwitch);
+    }
     function CalorieCount() {
         fire.database().ref('users/' + fire.auth().currentUser.uid + "/caloriesConsumed").on('value',(snapshot => {
             const data = snapshot.val();
@@ -44,8 +47,12 @@ export const BarcodeScanner = () => {
         {pageSwitch ? (
         <View style={styles.container}>
             <Text>Calories: {calories}</Text>
+            <TouchableOpacity style={styles.loginBtn} onPress={pageSwitchHandler}>
+                <Text>Scan Again</Text>
+            </TouchableOpacity>
+
         </View>
-        
+
         ):(
         <View style={styles.container}>
             <BarCodeScanner

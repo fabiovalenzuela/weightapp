@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="removes import from homescreen, allows code to function as is" />
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="removes import from homescreen, allows code to function as is">
+      <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/BarcodeScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BarcodeScanner.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,10 +58,28 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Edamam.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/components/Edamam.js" working-dir="$PROJECT_DIR$/components">
+  <component name="RunManager" selected="React Native.Debug">
+    <configuration name="Edamam.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Edamam.js" working-dir="$PROJECT_DIR$/components">
       <method v="2" />
     </configuration>
+    <configuration name="Debug" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <react-native value="$PROJECT_DIR$/node_modules/react-native" />
+      <platform value="ANDROID" />
+      <envs />
+      <only-packager />
+      <build-and-launch value="false" />
+      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <debug-host value="127.0.0.1" />
+      <debug-port value="19000" />
+      <method v="2">
+        <option name="ReactNativePackager" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Node.js.Edamam.js" />
+      <item itemvalue="React Native.Debug" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.Edamam.js" />
@@ -88,6 +111,7 @@
       <workItem from="1617515456183" duration="6956000" />
       <workItem from="1617546129585" duration="941000" />
       <workItem from="1617547092399" duration="248000" />
+      <workItem from="1618356004035" duration="2811000" />
     </task>
     <task id="LOCAL-00001" summary="fixed navigation and log out">
       <created>1616114164304</created>
@@ -164,5 +188,21 @@
     <MESSAGE value="made change in alert" />
     <MESSAGE value="made some change in alert" />
     <option name="LAST_COMMIT_MESSAGE" value="made some change in alert" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/BarcodeScanner.js</url>
+          <line>66</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/components/BarcodeScanner.js</url>
+          <line>70</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
