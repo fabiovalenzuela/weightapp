@@ -1,10 +1,11 @@
 import React, { useState, useEffect }  from "react";
-import {Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import {Text, View, StyleSheet, TouchableOpacity, Dimensions } from "react-native";
 import {BarCodeScanner} from "expo-barcode-scanner";
 import {sendApiRequest} from "./Edamam";
 import styles from './globalstyles.js';
 import fire from './fire';
 
+const { width } = Dimensions.get('screen');
 export const BarcodeScanner = () => {
     const [hasPermission, setHasPermission] = useState(null);
     const [scanned, setScanned] = useState(false);
@@ -57,13 +58,23 @@ export const BarcodeScanner = () => {
         <View style={styles.container}>
             <BarCodeScanner
                 onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-                style={StyleSheet.absoluteFillObject}
+                style={StyleSheet.absoluteFill}
             />
+            <View style = {bsStyle.scannerMask}></View>
         </View>
         )}
         </>
     );
 }
+
+const bsStyle = StyleSheet.create({
+    scannerMask : {
+        borderWidth: 1,
+        borderColor : "#FFFFFF",
+        width: width/1.5,
+        height: width/1.5
+    },
+})
 
 
 
