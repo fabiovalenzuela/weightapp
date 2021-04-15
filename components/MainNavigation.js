@@ -1,5 +1,4 @@
 import React from "react";
-import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './HomeScreen';
@@ -8,7 +7,7 @@ import SettingsScreen from './SettingsScreen';
 
 const Tab = createBottomTabNavigator();
 
-const Profile =()=>{
+const MainNavigation =()=>{
 
     return(
         <NavigationContainer>
@@ -24,4 +23,4 @@ const Profile =()=>{
 }
 
 
-export default Profile;
+export default MainNavigation;

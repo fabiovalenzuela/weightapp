@@ -1,5 +1,5 @@
 import firebase from 'firebase';
-
+// firebase code for app, able to call and send things to database with the fire import in other classes
 var firebaseConfig = {
   apiKey: "AIzaSyDxRk9cR-Jyi3bkjt8Tn9yyesYW1H8x-o8",
   authDomain: "weightapp-85a36.firebaseapp.com",
