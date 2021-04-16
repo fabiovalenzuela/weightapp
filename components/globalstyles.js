@@ -1,7 +1,10 @@
-import {StyleSheet} from "react-native";
+import {StyleSheet,Dimensions} from "react-native";
 
+const { width } = Dimensions.get('screen');
 
+//universal stylesheet for application, may be imported to provide default style to certain objects
 export default StyleSheet.create({
+
     container: {
         flex: 1,
         backgroundColor: '#05a6f0',
@@ -68,7 +71,37 @@ export default StyleSheet.create({
         padding: 8,
         borderRadius: 14,
         overflow: "hidden",
+    },
+    scannerMask : {
+        borderWidth: 1,
+        borderColor : "#FFFFFF",
+        width: width/1.5,
+        height: width/1.5
+    },forgotScreen:{flex: 1,
+        backgroundColor:"#ccffcf",
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '100%'
+
+    },
+    forgotScreen2:{width:"70%",
+        backgroundColor:"#ffffff",
+        borderRadius:25,
+        height:50,
+        marginBottom:5,
+        justifyContent:"center",
+        padding:20}
+    ,forgotMail:{
+
     }
+    ,
+    settingScreen:{
+        flex: 1,
+        backgroundColor:"#ccffcf",
+        alignItems: 'center',
+        justifyContent: 'center'
+    }
+
 });
 
 
