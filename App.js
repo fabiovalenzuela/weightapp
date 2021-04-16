@@ -3,7 +3,6 @@ import fire from './components/fire';
 import Login from './components/login';
 import Profile from './components/Profile';
 import ForgotPassword from './components/ForgotPassword';
-import barcodeScanner from "./components/BarcodeScanner";
 
 export default function App() {
         const [user, setUser] = useState('');
@@ -13,6 +12,14 @@ export default function App() {
         const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
+
+        const [firstName, setFirstName] = useState("");
+        const [lastName, setLastName] = useState("");
+        const [sex, setSex] = useState("");
+        const [age, setAge] = useState(-1);
+        const [weight, setWeight] = useState(-1);
+        const [feet, setFeet] = useState(-1);
+        const [inches, setInches] = useState(-1);
 
         const clearInputs = () => {
             setEmail('');
@@ -59,6 +66,18 @@ export default function App() {
                             break;
                     }
                 });
+                fire
+                .database()
+                .ref('users/' + firstName + lastName)
+                .set({
+                    firstName: firstName,
+                    lastName: lastName,
+                    sex: sex,
+                    age: age,
+                    weight: weight,
+                    feet: feet,
+                    inches: inches,
+            });
         };
 
         const authListener = () => {
@@ -103,6 +122,13 @@ export default function App() {
                     passwordError = {passwordError}
                     hasAccountHandler = {hasAccountHandler}
                     setForgotPassword = {setForgotPassword}
+                    setFirstName = {setFirstName}
+                    setLastName = {setLastName}
+                    setSex = {setSex}
+                    setAge = {setAge}
+                    setFeet = {setFeet}
+                    setInches = {setInches}
+                    setWeight = {setWeight}
                     />
                 </>
 

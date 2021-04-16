@@ -18,8 +18,8 @@ export default StyleSheet.create({
         width:"80%",
         backgroundColor:"#ffffff",
         borderRadius:25,
-        height:50,
-        marginBottom:5,
+        height:60,
+        marginBottom:20,
         justifyContent:"center",
         padding:20
     },
@@ -56,6 +56,18 @@ export default StyleSheet.create({
     forgotBody:{
         alignItems:"center",
         marginTop:25
+    },
+    loginView: {
+        width: 200,
+    },
+    registrationStyle: {
+        fontSize: 24,
+        color: "white",
+        backgroundColor: "#8181F7",
+        margin: 10,
+        padding: 8,
+        borderRadius: 14,
+        overflow: "hidden",
     }
 });
 
