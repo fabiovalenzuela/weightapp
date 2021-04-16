@@ -14,7 +14,6 @@ export default function App() {
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
 
-        //clears any values prior to startup
         const [firstName, setFirstName] = useState("");
         const [lastName, setLastName] = useState("");
         const [sex, setSex] = useState("");
@@ -23,6 +22,7 @@ export default function App() {
         const [feet, setFeet] = useState(-1);
         const [inches, setInches] = useState(-1);
 
+        //clears any values prior to startup
         const clearInputs = () => {
             setEmail('');
             setPassword('');
