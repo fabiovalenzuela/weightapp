@@ -21,6 +21,14 @@ export default function App() {
         const [feet, setFeet] = useState(-1);
         const [inches, setInches] = useState(-1);
 
+        const [firstName, setFirstName] = useState("");
+        const [lastName, setLastName] = useState("");
+        const [sex, setSex] = useState("");
+        const [age, setAge] = useState(-1);
+        const [weight, setWeight] = useState(-1);
+        const [feet, setFeet] = useState(-1);
+        const [inches, setInches] = useState(-1);
+
         //clears any values prior to startup
         const clearInputs = () => {
             setEmail('');

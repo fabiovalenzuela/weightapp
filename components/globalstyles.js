@@ -100,6 +100,18 @@ export default StyleSheet.create({
         backgroundColor:"#ccffcf",
         alignItems: 'center',
         justifyContent: 'center'
+    },
+    loginView: {
+        width: 200,
+    },
+    registrationStyle: {
+        fontSize: 24,
+        color: "white",
+        backgroundColor: "#8181F7",
+        margin: 10,
+        padding: 8,
+        borderRadius: 14,
+        overflow: "hidden",
     }
 
 });
