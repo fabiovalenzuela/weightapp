@@ -13,6 +13,13 @@ export default function App() {
         const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
+        const [firstName, setFirstName] = useState("");
+        const [lastName, setLastName] = useState("");
+        const [sex, setSex] = useState("");
+        const [age, setAge] = useState(-1);
+        const [weight, setWeight] = useState(-1);
+        const [feet, setFeet] = useState(-1);
+        const [inches, setInches] = useState(-1);
 
         //clears any values prior to startup
         const clearInputs = () => {
@@ -62,6 +69,18 @@ export default function App() {
                             break;
                     }
                 });
+                fire
+                .database()
+                .ref('users/' + firstName + lastName)
+                .set({
+                    firstName: firstName,
+                    lastName: lastName,
+                    sex: sex,
+                    age: age,
+                    weight: weight,
+                    feet: feet,
+                    inches: inches,
+            });
         };
 
         //triggers for transitions/response within the login page
@@ -107,6 +126,13 @@ export default function App() {
                     passwordError = {passwordError}
                     hasAccountHandler = {hasAccountHandler}
                     setForgotPassword = {setForgotPassword}
+                    setFirstName = {setFirstName}
+                    setLastName = {setLastName}
+                    setSex = {setSex}
+                    setAge = {setAge}
+                    setFeet = {setFeet}
+                    setInches = {setInches}
+                    setWeight = {setWeight}
                     />
                 </>
 
