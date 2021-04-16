@@ -60,6 +60,18 @@ export default StyleSheet.create({
         alignItems:"center",
         marginTop:25
     },
+    loginView: {
+        width: 200,
+    },
+    registrationStyle: {
+        fontSize: 24,
+        color: "white",
+        backgroundColor: "#8181F7",
+        margin: 10,
+        padding: 8,
+        borderRadius: 14,
+        overflow: "hidden",
+    },
     scannerMask : {
         borderWidth: 1,
         borderColor : "#FFFFFF",

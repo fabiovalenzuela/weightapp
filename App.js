@@ -13,6 +13,13 @@ export default function App() {
         const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
+        const [firstName, setFirstName] = useState("");
+        const [lastName, setLastName] = useState("");
+        const [sex, setSex] = useState("");
+        const [age, setAge] = useState(-1);
+        const [weight, setWeight] = useState(-1);
+        const [feet, setFeet] = useState(-1);
+        const [inches, setInches] = useState(-1);
 
         const [firstName, setFirstName] = useState("");
         const [lastName, setLastName] = useState("");
