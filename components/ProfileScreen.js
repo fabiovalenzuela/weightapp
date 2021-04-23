@@ -60,19 +60,27 @@ export default function ProfileScreen() {
     }
 
     useEffect(userPull);
-
-
+    let totalHeight = (feet*12) + inches*1;
+    // const BMR = () => {if(sex == "male"){
+    //     return 66+(6.3*weight)+(12.9*totalHeight)-(6.8*age)
+    //
+    // }else{
+    //         return 655+(4.3*weight)+(4.7*totalHeight)-(4.7*age)
+    // };}
+    const BMI = (weight/(totalHeight*totalHeight)*703).toFixed(2);
 
     return (
         <View style={styles.container}>
 
             <Text>
                 First Name: {firstName} {"\n"}
-                Last Name:{lastName} {"\n"}
-                Sex:{sex} {"\n"}
-                Age:{age} {"\n"}
+                Last Name: {lastName} {"\n"}
+                Sex: {sex} {"\n"}
+                Age: {age} {"\n"}
                 Weight:{weight}{"\n"}
-                Height:{feet}'{inches}"
+                Height:{feet}'{inches}"{"\n"}
+                BMI:{BMI} {"\n"}
+                {/*Base Calorie Expense:{BMR}*/}
             </Text>
 
 
