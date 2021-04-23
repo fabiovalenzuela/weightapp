@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time.">
-      <change afterPath="$PROJECT_DIR$/components/ProfileScreen.js" afterDir="false" />
+    <list default="true" id="0873ddc4-dec9-4e63-a86f-68922f573a3d" name="Default Changelist" comment="made changes in the user name look up within firebase. Was done in collaboration with Austin Mathews and Mohfez Rahman and Nick Bectel">
       <change beforePath="$PROJECT_DIR$/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/packager-info.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.expo/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/BarcodeScanner.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/BarcodeScanner.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Edamam.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/Edamam.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/MainNavigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/MainNavigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ProfileScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProfileScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/globalstyles.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/globalstyles.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +115,8 @@
       <workItem from="1618356004035" duration="2811000" />
       <workItem from="1618967342194" duration="2114000" />
       <workItem from="1618972872379" duration="538000" />
-      <workItem from="1619131614559" duration="4101000" />
+      <workItem from="1619131614559" duration="6799000" />
+      <workItem from="1619140884734" duration="98000" />
     </task>
     <task id="LOCAL-00001" summary="fixed navigation and log out">
       <created>1616114164304</created>
@@ -178,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618443708095</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="made changes in the user name look up within firebase. Was done in collaboration with Austin Mathews and Mohfez Rahman and Nick Bectel">
+      <created>1619138140026</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619138140026</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,7 +207,8 @@
     <MESSAGE value="made change in alert" />
     <MESSAGE value="made some change in alert" />
     <MESSAGE value="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time." />
-    <option name="LAST_COMMIT_MESSAGE" value="adds some documentation to certain parts of the app&#10;removes styles within ForgotPassword.js, BarcodeScanner.js, and SettingsScreen.js. Adds them to globalstyles.js code&#10;renames Profile.js to MainNavigation.js , Profile.js will be reused in a later time." />
+    <MESSAGE value="made changes in the user name look up within firebase. Was done in collaboration with Austin Mathews and Mohfez Rahman and Nick Bectel" />
+    <option name="LAST_COMMIT_MESSAGE" value="made changes in the user name look up within firebase. Was done in collaboration with Austin Mathews and Mohfez Rahman and Nick Bectel" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
