@@ -25,7 +25,7 @@ export const BarcodeScanner = () => {
         setPageSwitch(!pageSwitch);
     }
     function CalorieCount() {
-        fire.database().ref('users/' + fire.auth().currentUser.uid + "/caloriesConsumed").on('value',(snapshot => {
+        fire.database().ref('users/' + fire.auth().currentUser.email.replace('.',',') + "/caloriesConsumed").on('value',(snapshot => {
             const data = snapshot.val();
             setCalories(data);
         }))

@@ -26,7 +26,7 @@ const SignUp =(props)=>{
     } = props;
 
     return (
-    
+
       <View style={styles.container}>
 
         <Text style={styles.registrationStyle}>
@@ -150,46 +150,4 @@ const SignUp =(props)=>{
     );
 }
 
-/*
-const styles = StyleSheet.create({
-  input: {
-    width: 350,
-    height: 55,
-    backgroundColor: "#42A5F5",
-    margin: 10,
-    padding: 8,
-    color: "white",
-    borderRadius: 14,
-    fontSize: 18,
-    fontWeight: "500",
-  },
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: "white",
-    paddingLeft: 60,
-    paddingRight: 60,
-  },
-  buttonStyle: {
-    fontSize: 24,
-    color: "white",
-    backgroundColor: "#42A5F5",
-    margin: 10,
-    padding: 8,
-
-  },
-  registrationStyle: {
-    fontSize: 24,
-    color: "white",
-    backgroundColor: "#42A5F5",
-    margin: 10,
-    padding: 8,
-    borderRadius: 14,
-    overflow: "hidden",
-
-
-  },
-});
-*/
 export default SignUp;

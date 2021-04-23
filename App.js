@@ -13,13 +13,6 @@ export default function App() {
         const [passwordError, setPasswordError] = useState();
         const [hasAccount, setHasAccount] = useState(true);
         const [forgotPassword, setForgotPassword] = useState(false);
-        const [firstName, setFirstName] = useState("");
-        const [lastName, setLastName] = useState("");
-        const [sex, setSex] = useState("");
-        const [age, setAge] = useState(-1);
-        const [weight, setWeight] = useState(-1);
-        const [feet, setFeet] = useState(-1);
-        const [inches, setInches] = useState(-1);
 
         const [firstName, setFirstName] = useState("");
         const [lastName, setLastName] = useState("");
@@ -33,6 +26,7 @@ export default function App() {
         const clearInputs = () => {
             setEmail('');
             setPassword('');
+
         }
         //clears email and password errors prior to startup
         const clearErrors = () => {
@@ -79,7 +73,7 @@ export default function App() {
                 });
                 fire
                 .database()
-                .ref('users/' + firstName + lastName)
+                .ref('users/' + email.replace('.',','))
                 .set({
                     firstName: firstName,
                     lastName: lastName,
@@ -88,6 +82,7 @@ export default function App() {
                     weight: weight,
                     feet: feet,
                     inches: inches,
+                    caloriesConsumed: 0,
             });
         };
 
