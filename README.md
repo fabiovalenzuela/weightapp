@@ -31,7 +31,7 @@ Code architecture/lead programmer:
 Austin Matthews
 
 Client liaison & Testing lead: 
-Nicholas Betchel
+Nicholas Bechtel
 
 Data Modeling & Documentation lead:
 Mohfez Rahman
