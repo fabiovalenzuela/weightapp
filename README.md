@@ -54,7 +54,7 @@ Node.js
 expo cli
 Firebase
 
-#License
+# License
 
 This software is protected under the GNU General Public License You may use it, provided that any modifications you make to it are available for others to use and modify in a similar manner.
 
