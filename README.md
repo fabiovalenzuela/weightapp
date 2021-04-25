@@ -50,9 +50,12 @@ To run this app, you need the JavaScript IDE such as VScode, WebStrom and expo a
 
 # Build Architecture
 
-React Native 
+React Native  
+
 Node.js
+
 expo cli
+
 Firebase
 
 # License
