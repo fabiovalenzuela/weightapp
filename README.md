@@ -6,22 +6,22 @@ C.O.R.R.U.P.T
 
 WeightExchange
 
-#Repo location URL
+# Repo location URL
 
 https://github.com/fabiovalenzuela/weightapp
 
-#Progress tracking tool and URL
+# Progress tracking tool and URL
 
 https://jira.ggc.edu/projects/LOSE/summary
 
 
-#Communication tool
+# Communication tool
 
 Discord
 Microsoft Teams
 
 
-#Team Members & Roles
+# Team Members & Roles
 
 Team Manager & UI/UX design: 
 Alejandro Valenzuela
