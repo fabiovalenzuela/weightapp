@@ -39,14 +39,14 @@ Mohfez Rahman
 
 # Weight Exchange Application
 
-This is an application designed to connect different individuals to pace to make changes in regards to their weight. One individual will paired be with another individual, one seeking to lose weight, the other one seeking to gain weight. The goal of the app is to obtain a homeostasis between both individuals. People donating weight will receive a monetary value for the weight lost that they will be able to donate to the individuals who wish to gain weight. 
+This is an application designed to connect different individuals to pace to make changes in regards to their weight. One individual will paired be with another individual, one seeking to lose weight, the other one seeking to gain weight. The goal of the app is to obtain homeostasis between both individuals. People donating weight will receive a monetary value for the weight loss that they will be able to donate to the individuals who wish to gain weight. 
 
 # WeightExchange App screenshot
 
 
 # Requirements
 
-To run this app, you need the JavaScript IDE such as VScode, WebStrom and expo app installed in your phone.
+To run this app, you need the JavaScript IDE such as VScode, WebStrom, and expo app installed on your phone.
 
 # Build Architecture
 
@@ -60,7 +60,7 @@ Firebase
 
 # License
 
-This software is protected under the GNU General Public License You may use it, provided that any modifications you make to it are available for others to use and modify in a similar manner.
+This software is protected under the GNU General Public License You may use it, provided that any modifications you make to it are available for others to use and modify similarly.
 
 ## Message Boards
 
