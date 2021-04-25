@@ -48,7 +48,14 @@ To run this app, you need the JavaScript IDE such as VScode, WebStrom and expo a
 
 # Build Architecture
 
-**React Native **
+React Native 
+Node.js
+expo cli
+Firebase
+
+#License
+
+This software is protected under the GNU General Public License You may use it, provided that any modifications you make to it are available for others to use and modify in a similar manner.
 
 ## Message Boards
 
