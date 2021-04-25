@@ -8,6 +8,7 @@ WeightExchange
 
 #Repo location URL
 
+https://github.com/fabiovalenzuela/weightapp
 
 #Progress tracking tool and URL
 
