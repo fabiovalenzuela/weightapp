@@ -42,6 +42,13 @@ This is an application designed to connect different individuals to pace to make
 # WeightExchange App screenshot
 
 
+# Requirements
+
+To run this app, you need the JavaScript IDE such as VScode, WebStrom and expo app install in your phone.
+
+# Build Architecture
+
+**React Native **
 
 ## Message Boards
 
