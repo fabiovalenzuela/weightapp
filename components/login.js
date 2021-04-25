@@ -70,7 +70,7 @@ const Login = (props) => {
                     </View>
                 </>
                 ) : (
-                        <SignUp 
+                        <SignUp
                         setEmail={setEmail}
                         setPassword={setPassword}
                         handleSignup={handleSignup}
@@ -84,19 +84,7 @@ const Login = (props) => {
                         setFeet = {setFeet}
                         setInches = {setInches}
                         setWeight = {setWeight}/>
-                    /*
-                    <View>
-                        <TouchableOpacity style={styles.loginBtn} onPress={handleSignup}>
-                            <Text style={styles.loginText}>Register</Text>
-                        </TouchableOpacity>
-                    </View>
-                        <View><Text>Already have an account?</Text></View>
-                    <View style={styles.switchToLoginOrRegister}>
-                        <TouchableOpacity>
-                            <Text style={styles.loginText} onPress={hasAccountHandler}>Go Back</Text>
-                        </TouchableOpacity>
-                    </View>
-                    */
+
                 )}
             </>
     )

@@ -24,8 +24,8 @@ export async function sendApiRequest(UPC) {
 function storeToDatabase(calories) {
         fire
         .database()
-        .ref('users/' + fire.auth().currentUser.uid)
-        .set({
-            caloriesConsumed: Math.ceil(calories),
+        .ref('users/' + fire.auth().currentUser.email.replace('.',','))
+        .update({
+            caloriesConsumed: Math.round(calories),
         });
 }
