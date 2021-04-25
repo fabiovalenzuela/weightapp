@@ -18,6 +18,7 @@ https://jira.ggc.edu/projects/LOSE/summary
 # Communication tool
 
 Discord
+
 Microsoft Teams
 
 
