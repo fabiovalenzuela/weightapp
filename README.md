@@ -58,6 +58,8 @@ expo cli
 
 Firebase
 
+Edamam API
+
 # License
 
 This software is protected under the GNU General Public License You may use it, provided that any modifications you make to it are available for others to use and modify similarly.
