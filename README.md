@@ -97,13 +97,14 @@ Windows 10 & Mac OS
 4.  By default, npm will download to your root project folder and will update the dependencies in your package.json file.
 
 Yarn
-Windows 10 and Mac OS
+Windows 10 & Mac OS
 1.  Open the project in WebStorm.
 2.  Open the Project terminal, or press F12 to open the project terminal.
 3.  Enter "npm install --save-dev yarn" and press "Enter." Yarn is bundled with the previous Node.js donwload.
 4.  By default, yarn will downlaod to yur root project folder and will update the dependencies in your package.json file.
 
 Firebase
+Windows 10 & Mac OS
 1.  Got to https://firebase.google.com/ 
 2.  Make sure you are logged into your google account, and click on "Get Started."
 3.  Click "Add Project."
