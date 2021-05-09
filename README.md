@@ -82,7 +82,7 @@ Windows 10 & Mac OS
 4.  Follow all steps suggested by this installer. 
 5.  MAC OS ONLY: Copy Node.js to your Applications folder
 
-EXPO Cli
+EXPO CLI
 Windows 10 & Mac OS
 1.  Open the project in WebStorm
 2.  Open the project terminal, or press F12 to open the project terminal.
@@ -113,7 +113,18 @@ Windows 10 & Mac OS
 6.  Select the web platform under "Your Apps" section.
 7.  Enter "Weight App" as the name of your product to register your app.
 8.  Open the project in WebStorm and enter "yarn add firebase" in the project terminal.
-9.  You can double check that firebase has been added to the project successfully by checking the dependencies in the pakacge.json file. package.json is in the root project folder. 
+9.  You can double check that firebase has been added to the project successfully by checking the dependencies in the pakacge.json file. package.json is in the root project folder.
+
+Edamam API
+***ONLY ONE PERSON NEEDS TO MAKE AN ACCOUNT***
+1. Go to https://developer.edamam.com/
+2. Click on "APIs" on the navigation bar.
+3. Click "Food Database API"
+4. Click Start Now for the Developer option (The only free choice)
+5. Sign up for an account
+6. Once an account is made, sign in and click "Get an API Key Now!" on the navigation bar
+7. Click "View" on top of the Food Database Box
+8. Replace the APP_ID and API_KEY variables on the Edamam.js file with the given Application ID and Application Key
 
 # License
 
