@@ -62,7 +62,7 @@ Edamam API
 
 # Developer Instructions
 
-WebStorm
+WebStorm\
 Windows 10
 1.	Google “Webstorm Windows 10 download” and click on the WebStorm website.
 2.	Download WebStorm from the WebStorm download page.
@@ -74,7 +74,7 @@ Mac OS
 3.	Double-click the downloaded WebStorm.dmg OS X Disk Image file to mount it
 4.	Copy Webstorm to your Applications folder.
 
-Node.js
+Node.js\
 Windows 10 & Mac OS
 1.  Go to the site https://nodejs.org/en/download/Download Node.js Installer for Windows
 2.  Download the necessary binary files and the Node.js installer
@@ -82,28 +82,28 @@ Windows 10 & Mac OS
 4.  Follow all steps suggested by this installer. 
 5.  MAC OS ONLY: Copy Node.js to your Applications folder
 
-EXPO CLI
+EXPO CLI\
 Windows 10 & Mac OS
 1.  Open the project in WebStorm
 2.  Open the project terminal, or press F12 to open the project terminal.
 3.  Enter "npm install --save-dev expo-cli" to download EXPO Cli to the root project folder. EXPO Cli is bundled with the prvious Node.js download.
 4.  By default, EXPO Cli will download to your root project folder and will update the dependencies in your package.json file.
 
-NPM
+NPM\
 Windows 10 & Mac OS
 1.  Open the project in WebStorm.
 2.  Open the Project terminal, or press F12 to open the project terminal.
 3.  Enter "npm install" and press "Enter." NPM is bundled with the previous Node.js donwload.
 4.  By default, npm will download to your root project folder and will update the dependencies in your package.json file.
 
-Yarn
+Yarn\
 Windows 10 & Mac OS
 1.  Open the project in WebStorm.
 2.  Open the Project terminal, or press F12 to open the project terminal.
 3.  Enter "npm install --save-dev yarn" and press "Enter." Yarn is bundled with the previous Node.js donwload.
 4.  By default, yarn will downlaod to yur root project folder and will update the dependencies in your package.json file.
 
-Firebase
+Firebase\
 Windows 10 & Mac OS
 1.  Got to https://firebase.google.com/ 
 2.  Make sure you are logged into your google account, and click on "Get Started."
@@ -115,7 +115,7 @@ Windows 10 & Mac OS
 8.  Open the project in WebStorm and enter "yarn add firebase" in the project terminal.
 9.  You can double check that firebase has been added to the project successfully by checking the dependencies in the pakacge.json file. package.json is in the root project folder.
 
-Edamam API
+Edamam API\
 ***ONLY ONE PERSON NEEDS TO MAKE AN ACCOUNT***
 1. Go to https://developer.edamam.com/
 2. Click on "APIs" on the navigation bar.
